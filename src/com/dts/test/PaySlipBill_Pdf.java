@@ -38,9 +38,8 @@ public class PaySlipBill_Pdf
 			Metadata metaData = new Metadata();
 			AutoDetectParser autoDetectParser = new AutoDetectParser();
 			ParseContext parseContext = new ParseContext();
-
-			autoDetectParser.parse(inputStream, bodyContentHandler, metaData, parseContext);
 			
+			autoDetectParser.parse(inputStream, bodyContentHandler, metaData, parseContext);
 			String extracMonthData = getExtracMonthData(content);
 			System.out.println(extracMonthData);
 		} 
